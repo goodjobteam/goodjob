@@ -36,6 +36,7 @@ public class GoodjobApplication {
 //	掌握日志打印配置文件意思
 //	git提交忽略文件学习
 //	test commit
+//	upstream提交
 	
 //	nginx使用
 	
