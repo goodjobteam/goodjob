@@ -61,5 +61,5 @@ public class GoodjobApplication {
 	
 //	TODO:调用其他类文件分别实现 数组，链表  ，等操作。
 	
-//	test gitx
+//	test gitx -delete gitx
 }
