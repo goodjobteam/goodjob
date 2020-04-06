@@ -35,6 +35,28 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!--阿里fastjson依赖 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.32</version>
+		</dependency>
+		<!-- 前端网页模板类，公司一般前后台分离，不会这么用 -->
+		 <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-thymeleaf</artifactId>-->
+        <!--</dependency>-->
+		
+		<!-- jpa依赖Java Persistence API Java持久层API  它定义了一系列对象持久化的标准 hibernate 就是实现该标准之一 -->
+		 <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		<!-- mysql依赖，无需指定版本，maven自动指定 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
