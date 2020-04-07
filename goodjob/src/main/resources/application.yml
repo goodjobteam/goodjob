@@ -1,3 +1,4 @@
+#使用该方式yml 则配置文件按该方式执行。
 spring:
   profiles:
     active: dev

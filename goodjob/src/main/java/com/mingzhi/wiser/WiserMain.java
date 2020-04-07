@@ -1,8 +1,9 @@
 package com.mingzhi.wiser;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class WiserMain {
 
 	public static void main() {

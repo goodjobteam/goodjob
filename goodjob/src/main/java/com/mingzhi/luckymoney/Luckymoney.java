@@ -1,11 +1,10 @@
 package com.mingzhi.luckymoney;
 
-import org.hibernate.annotations.DynamicUpdate;
+import java.math.BigDecimal;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.math.BigDecimal;
 
 /**
  * Created by 廖师兄

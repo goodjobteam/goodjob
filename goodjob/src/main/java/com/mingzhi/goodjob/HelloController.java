@@ -2,6 +2,7 @@ package com.mingzhi.goodjob;
 
 import java.math.BigDecimal;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.mingzhi.wiser.WiserMain;
 
 /*
  * mingzhi
@@ -24,6 +27,10 @@ public class HelloController {
 	private BigDecimal minmoney;
 	@Value("${descpriton}")
 	private String descpriton;
+	
+	@Autowired
+	private WiserMain wiserMain;
+	
 
 //	页面访问地址：localhost:8088/hello   getmapping只支持post请求
 	@GetMapping("/hello")  
@@ -32,7 +39,8 @@ public class HelloController {
 //	@RequestMapping(value="/hello",method=RequestMethod.POST) 
 	public String say(){
 //		return "实现了页面访问，goodboy!";
-		return "minmoney : " + minmoney+ "发红包说明：" + descpriton;
+//		return "minmoney : " + minmoney+ "发红包说明：" + descpriton;
+		return wiserMain.test();
 	}
 	
 //	获取链接中的参数方式   @PathVariable [通过url传参]或者 @RequestParam 【通过url或者body】  访问的连接：http://localhost:8088/selfsetpath/hi/100  或者  http://localhost:8088/selfsetpath/hi？id=100

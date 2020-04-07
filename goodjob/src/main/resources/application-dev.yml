@@ -3,8 +3,11 @@ server:
   servlet:
     context-path: /luckymoney
 #可以使用如下方式直接引properties的数据，注意该方式只适合使用几个数据较少的时候使用。如果较多页面@Value获取就繁琐了。
-#descpriton : 最小发的金额为${minmoney}元
+minMoney: 0.01
+descpriton : 最小发的金额为${minmoney}元
 
+
+#采用对象的方式如下，如上为单个方式
 limit:
   minMoney: 0.01
   maxMoney: 9999
@@ -13,10 +16,12 @@ limit:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/luckymoney?characterEncoding=utf-8
+#   设置编码格式utf-8 为了存入数据库的时候不乱码
+    url: jdbc:mysql://127.0.0.1:3306/goodjob?characterEncoding=utf-8
     username: root
     password: 123456
   jpa:
     hibernate:
+# ddl 设置为create则会每次都删除数据新建。update则不会
       ddl-auto: update
     show-sql: true

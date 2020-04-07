@@ -23,6 +23,8 @@ public class HelloController {
 	@Value("${descpriton}")
 	private String descpriton;
 
+
+	
 //	页面访问地址：localhost:8088/hello   getmapping只支持post请求
 	@GetMapping("/hello")  
 //	就版本1点多的时候使用如下较繁琐,如下不写请求方式则get 和post都可。
@@ -32,6 +34,7 @@ public class HelloController {
 //		return "实现了页面访问，goodboy!";
 		return "minmoney : " + minmoney+ "发红包说明：" + descpriton;
 	}
+	
 	
 //	获取链接中的参数方式   @PathVariable [通过url传参]或者 @RequestParam 【通过url或者body】  访问的连接：http://localhost:8088/selfsetpath/hi/100  或者  http://localhost:8088/selfsetpath/hi？id=100
 	@GetMapping("/hi/{id}")  

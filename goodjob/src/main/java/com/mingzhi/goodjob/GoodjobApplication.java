@@ -42,16 +42,6 @@ public class GoodjobApplication {
 		 
 	}
 	
-//	public static String getNewWord() {
-//		wiserMain.test();
-//		
-//		return "1";
-//	}
-	
-	
-
-//	git提交忽略文件学习
-
 	
 //	nginx使用
 	
@@ -61,5 +51,5 @@ public class GoodjobApplication {
 	
 //	TODO:调用其他类文件分别实现 数组，链表  ，等操作。
 	
-	
+
 }
