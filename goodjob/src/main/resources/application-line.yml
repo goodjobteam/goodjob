@@ -1,0 +1,28 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /luckymoney
+
+minMoney: 0.01
+descpriton : 最小发的金额为${minmoney}元
+
+
+limit:
+  minMoney: 1
+  maxMoney: 9999
+  description: 最少要发${limit.minMoney}元, 最多${limit.maxMoney}元
+  
+  
+  
+spring:
+ datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#   设置编码格式utf-8 为了存入数据库的时候不乱码
+    url: jdbc:mysql://140.143.224.188:3306/test?characterEncoding=utf-8
+    username: mingzhi
+    password: 123456
+jpa:
+    hibernate:
+# ddl 设置为create则会每次都删除数据新建。update则不会
+      ddl-auto: update
+    show-sql: true
