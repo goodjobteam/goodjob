@@ -38,7 +38,8 @@ public class GoodjobApplication {
 		System.out.println("hello world 项目已经启动完成咯");
 		 
 	}
-
+// TODO:服务器域名与ip的映射。
+	
 //	TODO:调用配置文件
 	
 //  TODO:Mybatis使用
