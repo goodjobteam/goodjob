@@ -22,6 +22,11 @@ public class GoodjobApplication {
 	
     private static final Logger LOG = LoggerFactory.getLogger(GoodjobApplication.class);
 
+    static String name ="明智";
+    static {
+//    	静态方法和变量相当于类变量，可以通过对象或者类名点调用。而普通方法只能对象调用。
+    	System.out.println(GoodjobApplication.name+"这是对静态方法区的尝试");
+    }
     //通过类反射获取其他类实现调用
 //   @Autowired
 //   private static  WiserMain wiserMain;
