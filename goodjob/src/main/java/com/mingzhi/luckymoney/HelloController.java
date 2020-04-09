@@ -26,7 +26,7 @@ public class HelloController {
 
 	
 //	页面访问地址：localhost:8088/hello   getmapping只支持post请求
-	@GetMapping("/hello")  
+	@GetMapping("/hello1")  
 //	就版本1点多的时候使用如下较繁琐,如下不写请求方式则get 和post都可。
 //	@RequestMapping(value="/hello")
 //	@RequestMapping(value="/hello",method=RequestMethod.POST) 

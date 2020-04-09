@@ -1,4 +1,4 @@
-package com.mingzhi.wiser;
+package com.mingzhi.goodjob;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

@@ -88,3 +88,7 @@ buildNumber.properties
 .classpath
 .settings
 .metadata
+
+#自己指定本地需要忽略提交的文件夹
+/goodjob/goodlogs/
+/goodjob/bin/
