@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.mingzhi.common.SpringUtil;
+import com.mingzhi.interview.springioc.Person;
 
 /**
  *  
@@ -24,9 +25,10 @@ public class GoodjobApplication {
 
     static String name ="明智";
     static {
-//    	静态方法和变量相当于类变量，可以通过对象或者类名点调用。而普通方法只能对象调用。
+// 静态方法和变量相当于类变量，可以通过对象或者类名点调用。而普通方法只能对象调用。
     	System.out.println(GoodjobApplication.name+"这是对静态方法区的尝试");
     }
+    
     //通过类反射获取其他类实现调用
 //   @Autowired
 //   private static  WiserMain wiserMain;
@@ -43,6 +45,18 @@ public class GoodjobApplication {
 		System.out.println("hello world 项目已经启动完成咯");
 		 
 	}
+	
+//	run方法也是继承自ApplicationContext的,通过其getBean的方法获取Person的实例
+//	public static void main(String[] args) {
+//		ApplicationContext ctx=SpringApplication.run(GoodjobApplication.class, args);
+////		getBean方法的代码逻辑： 转换beanName  - 从缓存（工厂）中加载实例-实例化Bean -检测parentBeanFactory- 初始化依赖的Bean - 创建Bean 并返回。
+//		Person person =ctx.getBean(Person.class);
+//		 System.out.println("Name is "+person.getName());
+//		 person.call(); 
+//	}
+//	
+	
+	
 // TODO:服务器域名与ip的映射。
 	
 //	TODO:调用配置文件
