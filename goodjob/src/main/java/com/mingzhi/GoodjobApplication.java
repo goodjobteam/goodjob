@@ -57,7 +57,8 @@ public class GoodjobApplication {
 //	
 	
 	
-// TODO:服务器域名与ip的映射。
+// TODO:Springboot与easyUI或者layUI界面实现简单的后台系统
+// TODO：SpringCloud
 	
 //	TODO:调用配置文件
 	
