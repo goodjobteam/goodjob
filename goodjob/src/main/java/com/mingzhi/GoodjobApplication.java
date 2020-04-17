@@ -56,6 +56,18 @@ public class GoodjobApplication {
 //	}
 //	
 	
+//  调用配置文件的配置或者使用@value注解方式	
+//	 public static void main(String[] args) {
+//	        ConfigurableApplicationContext ctx =  SpringApplication.run(SpringcloudApplication.class, args);
+//
+//	        System.out.println(ctx.getEnvironment().getProperty("test.port"));
+//	    }
+//	
+	
+	
+	
+	
+	
 	
 // TODO:Springboot与easyUI或者layUI界面实现简单的后台系统
 // TODO：SpringCloud
