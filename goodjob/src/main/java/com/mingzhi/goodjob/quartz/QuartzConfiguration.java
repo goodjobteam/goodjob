@@ -19,7 +19,8 @@ import org.springframework.context.annotation.Configuration;
  *
  *
  */
-@Configuration
+//暂时注解掉，不让它执行调度任务。仅用于测试就行。
+//@Configuration
 public class QuartzConfiguration {
 	// 使用jobDetail包装job
     @Bean

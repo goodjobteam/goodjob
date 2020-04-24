@@ -1,14 +1,11 @@
 package com.mingzhi;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.mingzhi.common.SpringUtil;
-import com.mingzhi.interview.springioc.Person;
 
 /**
  *  
@@ -22,8 +19,12 @@ import com.mingzhi.interview.springioc.Person;
 public class GoodjobApplication {
 	
     private static final Logger LOG = LoggerFactory.getLogger(GoodjobApplication.class);
-
+  
+// static String name ="明智"; 理解final修饰的变量-默认String是被final修饰的。所以如果初始定义final后再次修改实际上只是新生成了一个String
+// 原来的name被垃圾回收。 如果加上final 修饰，则在类中修饰时被提示不能修改。
     static String name ="明智";
+  
+    
     static {
 // 静态方法和变量相当于类变量，可以通过对象或者类名点调用。而普通方法只能对象调用。
     	System.out.println(GoodjobApplication.name+"这是对静态方法区的尝试");
@@ -43,7 +44,25 @@ public class GoodjobApplication {
 		LOG.info("==============this is info级别日志=============");
 		LOG.debug("==============我是 debug级别日志============");
 		System.out.println("hello world 项目已经启动完成咯");
-		 
+		
+		TestMethod();
+		
+	}
+	
+	public static void TestMethod() {
+		int [] arr= {1,3,5,15,33};
+		System.out.println(arr.length);
+		
+//		TreeSet和TreeMap的底层基于平衡二叉树实现
+		TreeSet tset=new TreeSet();
+		tset.add(1);
+		System.out.println(tset);
+		TreeMap<Integer,String> tmap= new TreeMap<Integer,String>();
+		tmap.put(1, "one");
+		tmap.put(2,"two");
+		System.out.println(tmap.get(1));
+		
+		
 	}
 	
 //	run方法也是继承自ApplicationContext的,通过其getBean的方法获取Person的实例
